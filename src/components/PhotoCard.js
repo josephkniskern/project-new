@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import Paper from "@material-ui/core/Paper";
 
 const PhotoCard = (props) => {
   return (
-    <div>
-      <img src={props.photo.url} width="20px" height="20px"></img>
-    </div>
+    <Paper style={{ padding: 20 }}>
+      <img src={props.photo.url} width="200px" height="200px"></img>
+    </Paper>
   );
 };
 
